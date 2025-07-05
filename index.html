@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Clínica Oftalmológica Colombia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visión Colombia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header { background: #0a3d62; color: white; padding: 20px; }
@@ -13,6 +16,26 @@
     main { padding: 20px; }
     footer { background: #0a3d62; color: white; text-align: center; padding: 15px; }
     .cta { background: #1e90ff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; }
+    body{font-family:'Roboto',sans-serif;margin:0;padding:0;color:#333;line-height:1.5;}
+    nav{background:#003366;padding:10px 20px;position:sticky;top:0;z-index:100;}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;}
+    nav li{margin-right:20px;}
+    nav a{color:white;text-decoration:none;font-weight:500;}
+    header.hero{background:url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;position:relative;}
+    header.hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);}
+    header.hero h1{position:relative;font-size:3em;margin:0;}
+    header.hero p{position:relative;font-size:1.2em;margin:10px 0 20px;}
+    header.hero a.cta{position:relative;background:#1e90ff;color:white;padding:12px 30px;border-radius:4px;text-decoration:none;font-weight:bold;}
+    main{padding:40px 20px;max-width:1200px;margin:auto;}
+    section{margin-bottom:60px;}
+    h2{text-align:center;color:#003366;margin-bottom:20px;}
+    .services,.team,.reasons{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+    .service,.team-member,.reason{background:#f4f4f4;padding:20px;border-radius:6px;width:280px;text-align:center;}
+    .service img,.team-member img{width:100%;border-radius:6px;}
+    .reason{width:320px;}
+    blockquote{font-style:italic;background:#f8f8f8;border-left:4px solid #1e90ff;padding:20px;margin:0;}
+    footer{background:#003366;color:white;text-align:center;padding:20px 0;}
+    @media(max-width:600px){nav ul{flex-direction:column;}nav li{margin-bottom:10px;}}
   </style>
 </head>
 <body>
@@ -25,31 +48,107 @@
     <ul>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#equipo">Nuestro Equipo</a></li>
+      <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#equipo">Equipo</a></li>
       <li><a href="#contacto">Contacto</a></li>
       <li><a href="#ubicacion">Ubicación</a></li>
     </ul>
   </nav>
 
+  <header class="hero">
+    <h1>Visión Colombia</h1>
+    <p>Especialistas en salud ocular y cirugía refractiva</p>
+    <a class="cta" href="#contacto">Pide tu cita</a>
+  </header>
+
   <main>
     <section id="servicios">
       <h2>Servicios</h2>
       <p>Ofrecemos exámenes oftalmológicos, cirugía láser, tratamientos de cataratas, y más.</p>
+    <section id="sobrenosotros">
+      <h2>Sobre Nosotros</h2>
+      <p style="text-align:center;max-width:800px;margin:auto;">Somos una clínica oftalmológica dedicada a ofrecer tratamientos de alta calidad para cuidar de tu salud visual. Nuestro objetivo es mejorar la visión de nuestros pacientes con tecnología avanzada y un equipo médico altamente capacitado.</p>
+    </section>
+
+    <section id="especialidades">
+      <h2>Especialidades</h2>
+      <div class="services">
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=600&q=60" alt="Exámenes oftalmológicos">
+          <h3>Exámenes oftalmológicos</h3>
+          <p>Revisiones completas y diagnósticos precisos para cuidar tu salud visual.</p>
+        </div>
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1551601651-0f062bb0992b?auto=format&fit=crop&w=600&q=60" alt="Cirugía láser">
+          <h3>Cirugía láser</h3>
+          <p>Procedimientos de última generación para corregir defectos refractivos.</p>
+        </div>
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1580281657523-47bb07472583?auto=format&fit=crop&w=600&q=60" alt="Tratamiento de cataratas">
+          <h3>Tratamiento de cataratas</h3>
+          <p>Soluciones seguras y efectivas para recuperar tu visión.</p>
+        </div>
+      </div>
     </section>
 
     <section id="equipo">
       <h2>Nuestro Equipo</h2>
       <p>Contamos con un equipo de especialistas en oftalmología con amplia trayectoria en Colombia.</p>
+      <div class="team">
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1606579339862-573a1c52c1c4?auto=format&fit=crop&w=600&q=60" alt="Dr. Juan Pérez">
+          <h3>Dr. Juan Pérez</h3>
+          <p>Especialista en cirugía refractiva con más de 10 años de experiencia.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=600&q=60" alt="Dra. Laura Gómez">
+          <h3>Dra. Laura Gómez</h3>
+          <p>Oftalmóloga experta en tratamientos de cataratas y glaucoma.</p>
+        </div>
+      </div>
     </section>
 
     <section id="contacto">
       <h2>Contacto</h2>
       <p>Escríbenos para agendar tu cita o conocer más sobre nuestros servicios:</p>
       <a class="cta" href="mailto:info@visioncolombia.com">¡Agenda tu cita!</a>
+    <section>
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="reasons">
+        <div class="reason">
+          <h3>Profesionales Certificados</h3>
+          <p>Contamos con médicos reconocidos y con amplia trayectoria en Colombia.</p>
+        </div>
+        <div class="reason">
+          <h3>Tecnología Avanzada</h3>
+          <p>Equipos modernos que garantizan diagnósticos y tratamientos precisos.</p>
+        </div>
+        <div class="reason">
+          <h3>Atención Personalizada</h3>
+          <p>Nos enfocamos en las necesidades de cada paciente para brindar la mejor opción.</p>
+        </div>
+      </div>
     </section>
 
     <section id="ubicacion">
       <h2>Ubicación</h2>
       <p>Dirección: Calle 123 #45-67, Bogotá, Colombia.</p>
+    <section>
+      <h2>Testimonios</h2>
+      <blockquote>
+        "Gracias a Visión Colombia recuperé mi visión y mi calidad de vida mejoró notablemente." - María R.
+      </blockquote>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p style="text-align:center;">Calle 123 #45-67, Bogotá, Colombia</p>
+      <p style="text-align:center;">Teléfono: (1) 234 5678</p>
+      <p style="text-align:center;">Correo: <a href="mailto:info@visioncolombia.com">info@visioncolombia.com</a></p>
+      <p style="text-align:center;">
+        <img src="https://images.unsplash.com/photo-1528901166007-3784c7dd3653?auto=format&fit=crop&w=800&q=60" alt="Mapa" style="max-width:100%;border-radius:6px;">
+      </p>
     </section>
   </main>
 
